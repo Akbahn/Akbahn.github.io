@@ -1,48 +1,147 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Hyder Akbar | Portfolio</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #121212;
-      color: #f5f5f5;
-      margin: 0;
-      padding: 2rem;
-      text-align: center;
-    }
-    h1 {
-      color: #00bcd4;
-    }
-    a {
-      color: #00bcd4;
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
-    .projects {
-      margin-top: 2rem;
-    }
-  </style>
-</head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hyder Akbar - Computer Science Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    </head>
 <body>
-  <h1>Hi, I'm Hyder Akbar</h1>
-  <p>CS major passionate about building real-world software — especially full-stack, systems, and networking projects.</p>
+    <header>
+        <nav>
+            <div class="logo">[Hyder AKbar]</div>
+            <ul>
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="https://github.com/Akbahn" target="_blank">GitHub</a></li>
+            </ul>
+        </nav>
+    </header>
 
-  <div class="projects">
-    <h2>Check out my projects</h2>
-    <ul style="list-style: none; padding: 0;">
-      <li><a href="https://github.com/Nadir-Kutluozen/Network_Simulator.git" target="_blank"> Project 1</a></li>
-      <li><a href="https://github.com/Akbahn/Food_Pantry.git" target="_blank">🌐 Project 2</a></li>
-      <li><a href="https://github.com/Akbahn/Module_03_Card_24.git" target="_blank">📊 Project 3</a></li>
-    </ul>
-  </div>
+    <main>
+        <section id="hero">
+            <h1>Hi, I'm Hyder Akbar</h1>
+            <p>A passionate Computer Science student at Farmingdale State College.</p>
+            <a href="#projects" class="cta-button">View My Work</a>
+        </section>
 
-  <footer style="margin-top: 3rem;">
-    <p>© 2025 Hyder Akbar</p>
-  </footer>
-</body>
+        <section id="about">
+            <h2>About Me</h2>
+            <p>Computer Science major passionate about building practical software solutions that make a difference. Interested in full-stack development, systems programming, and real-world applications of AI and networking.
+            </p>
+        </section>
+
+        <section id="projects">
+            <h2>My Projects</h2>
+            <p class="section-intro">Here are a few key projects I've worked on, demonstrating my skills in software development and problem-solving. As a Computer Science major at Farmingdale State College, I'm passionate about building practical and engaging applications.</p>
+            <div class="projects-grid">
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <img src="placeholder-network-simulator.png" alt="Network Simulator Screenshot (Placeholder)" class="project-image">
+                        <h3>Network Packet Visualizer</h3>
+                    </div>
+                    <div class="project-body">
+                        <p>A drag-and-drop network simulator that visualizes how data packets travel between nodes. This tool helps in understanding network topologies and data flow concepts.</p>
+                        <p><strong>Key Features:</strong> Dynamic node creation, packet animation, customizable network layouts.</p>
+                        <p><strong>Technologies:</strong></p>
+                        <ul class="technologies">
+                            <li><span class="tech-tag">JavaFX</span></li>
+                            <li><span class="tech-tag">Scene Builder</span></li>
+                            <li><span class="tech-tag">Java</span></li>
+                            <li><span class="tech-tag">Microsoft Azure MySQL</span></li>
+                            <li><span class="tech-tag">MySQL</span></li>
+                        </ul>
+                    </div>
+                    <div class="project-footer">
+                        <a href="https://github.com/Nadir-Kutluozen/Network_Simulator.git" target="_blank" class="btn-github"><i class="fab fa-github"></i> View on GitHub</a>
+                        </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <img src="placeholder-food-pantry.png" alt="Food Pantry System Screenshot (Placeholder)" class="project-image">
+                        <h3>Food Pantry Management System</h3>
+                    </div>
+                    <div class="project-body">
+                        <p>A comprehensive management system designed for food pantry organizations. It facilitates inventory tracking, user requests for food, and administrative oversight for staff.</p>
+                        <p><strong>Key Features:</strong> User roles (client, staff, admin), inventory management, request processing, reporting.</p>
+                        <p><strong>Technologies:</strong></p>
+                        <ul class="technologies">
+                            <li><span class="tech-tag">JavaFX</span></li>
+                            <li><span class="tech-tag">Scene Builder</span></li>
+                            <li><span class="tech-tag">Java</span></li>
+                            <li><span class="tech-tag">Microsoft Azure MySQL</span></li>
+                            <li><span class="tech-tag">MySQL</span></li>
+                        </ul>
+                    </div>
+                    <div class="project-footer">
+                        <a href="https://github.com/Akbahn/Food_Pantry.git" target="_blank" class="btn-github"><i class="fab fa-github"></i> View on GitHub</a>
+                        </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <img src="placeholder-card24.png" alt="Card 24 Game Screenshot (Placeholder)" class="project-image">
+                        <h3>Card 24 Game</h3>
+                    </div>
+                    <div class="project-body">
+                        <p>An engaging card game where players aim to achieve the number 24 using four randomly generated cards and basic arithmetic operations (+, -, *, /).</p>
+                        <p><strong>Key Features:</strong> Random card generation, user input for operations, solution validation, timer (optional).</p>
+                        <p><strong>Technologies:</strong></p>
+                        <ul class="technologies">
+                            <li><span class="tech-tag">JavaFX</span></li>
+                            <li><span class="tech-tag">Scene Builder</span></li>
+                            <li><span class="tech-tag">Java</span></li>
+                        </ul>
+                    </div>
+                    <div class="project-footer">
+                        <a href="https://github.com/Akbahn/Module_03_Card_24.git" target="_blank" class="btn-github"><i class="fab fa-github"></i> View on GitHub</a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>Scene Buidler</li>
+                <li>Java & JavaFX</li>
+                <li>HTML & CSS</li>
+                <li>JavaScript</li>
+                </ul>
+        </section>
+
+        <section id="education">
+            <h2>Education</h2>
+            <div>
+              <h3>Stony Brook University</h3>
+                <p>Bachelor of Science in Biology</p>
+                <p>Graduation: May 2020</p>
+                <h4>Farmingdale State College</h4>
+                <p>Bachelor of Science in Computer Science</p>
+                <p>Expected Graduation: May 20XX</p>
+                </div>
+        </section>
+
+        <section id="contact">
+            <h2>Get In Touch</h2>
+            <p>Email: <a href="mailto:hyderakbar@hotmail.com">your.email@example.com</a></p>
+            <p>LinkedIn: <a href="[your-linkedin-url]" target="_blank">Your LinkedIn Profile</a></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="current-year"></span> [Your Name]. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
+    </body>
 </html>
